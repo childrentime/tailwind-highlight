@@ -1,0 +1,47 @@
+{
+  "name": "tailwind-highlight",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "code highlighting with tailwindcss, work with @tailwindcss/typography",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "bunchee",
+    "publish:ci": "tsx scripts/publish.ts"
+  },
+  "keywords": [
+    "tailwindcss",
+    "highlight",
+    "code",
+    "syntax",
+    "highlighting",
+    "typography",
+    "markdown",
+    "mdx",
+    "react",
+    "vue"
+  ],
+  "author": "LianWen Wu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.2.0",
+    "bunchee": "^5.3.2",
+    "consola": "^3.2.3",
+    "tailwindcss": "^3.4.9",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3"
+  }
+}
